@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ComidaViewActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/cabecera" />
+
+    <ImageView
+        android:id="@+id/imageViewComidaView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textViewComidaViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewComidaView"
+        app:layout_constraintStart_toStartOf="@+id/imageViewComidaView"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewComidaView" />
+
+    <Button
+        android:id="@+id/buttonModificarComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Modificar"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComidaViewDescripcion"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/textViewComidaViewDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComidaViewDescripcion" />
+
+    <TextView
+        android:id="@+id/textViewComidaViewDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComidaViewTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewComidaViewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComidaViewTitle" />
+
+    <Button
+        android:id="@+id/buttonEliminarComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonModificarComida"
+        app:layout_constraintStart_toStartOf="@+id/buttonModificarComida"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModificarComida" />
+</androidx.constraintlayout.widget.ConstraintLayout>
